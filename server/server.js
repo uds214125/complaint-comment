@@ -48,10 +48,10 @@ app.listen(port, () => {
     Conn().then(db=>{
         console.log(' db available ')
         app.locals.db = db;
-        db.collection("complaints").findOne({}, function(err, result) {
-            if (err) throw err;
-            console.log('result : ');
-        });
+        // db.collection("complaints").findOne({}, function(err, result) {
+        //     if (err) throw err;
+        //     console.log('Single Record : ', result);
+        // });
         Logger(`Node.js app is listening at http://localhost:${port}`);
     }).catch(dbErr=>{
         console.log(' db err ', dbErr)

@@ -26,7 +26,3 @@ import { CommentService } from './comment/comment.service';
   entryComponents: [CreateComplaintComponent, ComplaintViewComponent]
 })
 export class CoreModule { }
-
-
-// https://medium.com/@tarkus/how-to-open-database-connections-in-a-node-js-express-app-e14b2de5d1f8
-// https://stackoverflow.com/questions/10656574/how-do-i-manage-mongodb-connections-in-a-node-js-web-application
